@@ -21,6 +21,15 @@ body {
   padding: 50px 0px;
 }
 
+.beautiful-text {
+  font-size: 4em; /* Big font size */
+  font-family: 'Brush Script MT', cursive; /* Beautiful script-like font */
+  color: #FF69B4; /* Pink color */
+  text-align: center; /* Center-align the text */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Optional: adds a soft shadow to the text */
+  margin-top: 20px; /* Add some space from the top */
+}
+
 .night {
   position: fixed;
   left: 50%;
