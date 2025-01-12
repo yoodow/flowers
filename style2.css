@@ -12,7 +12,7 @@
 
 body {
   display: flex;
-  align-items: flex-end; /* Keep the flower effect at the bottom */
+  align-items: flex-end;
   justify-content: center;
   min-height: 100vh;
   background-color: var(--dark-color);
@@ -20,27 +20,35 @@ body {
   perspective: 1000px;
   padding: 50px 0;
   margin: 0;
-  position: relative; /* Set the position to relative to allow absolute positioning */
-}
-
-.beautiful-text {
-  font-size: 6em; /* Big font size */
-  font-family: 'Brush Script MT', cursive; /* Beautiful script-like font */
-  color: #FF69B4; /* Pink color */
-  text-align: center; /* Center-align the text */
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Optional: adds a soft shadow to the text */
-  position: absolute; /* Absolute positioning */
-  top: 20px; /* Position the text 20px from the top of the page */
-  width: 100%; /* Ensure the text takes the full width */
+  position: relative;
 }
 
 .beautiful-text {
   font-size: 4em; /* Big font size */
   font-family: 'Brush Script MT', cursive; /* Beautiful script-like font */
-  color: #FF69B4; /* Pink color */
+  color: #FFFFFF; /* White color for DINA */
   text-align: center; /* Center-align the text */
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Optional: adds a soft shadow to the text */
-  margin-top: 20px; /* Add some space from the top */
+  text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5); /* Stronger shadow for better contrast */
+  position: absolute;
+  top: 20px;
+  width: 100%; /* Ensure the text takes the full width */
+  padding: 10px;
+  background: linear-gradient(to right, #FF69B4, #FF1493); /* Pink gradient background */
+  border-radius: 15px; /* Rounded corners */
+  border: 2px solid #FF1493; /* Pink border around the text */
+  box-shadow: 0 0 15px rgba(255, 20, 147, 0.5); /* Pink glow around the text */
+}
+
+.beautiful-text::before {
+  content: "♡ "; /* Add a heart symbol before the text */
+  color: #FFFFFF; /* White hearts */
+  font-size: 1.5em;
+}
+
+.beautiful-text::after {
+  content: " ♡"; /* Add a heart symbol after the text */
+  color: #FFFFFF; /* White hearts */
+  font-size: 1.5em;
 }
 
 .night {
