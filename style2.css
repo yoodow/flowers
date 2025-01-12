@@ -33,7 +33,6 @@ body {
   top: 20px;
   width: 100%; /* Ensure the text takes the full width */
   padding: 10px;
-  background: linear-gradient(to right, #FF69B4, #FF1493); /* Pink gradient background */
   border-radius: 15px; /* Rounded corners */
   border: 2px solid #FF1493; /* Pink border around the text */
   box-shadow: 0 0 15px rgba(255, 20, 147, 0.5); /* Pink glow around the text */
@@ -43,12 +42,16 @@ body {
   content: "♡ "; /* Add a heart symbol before the text */
   color: #FFFFFF; /* White hearts */
   font-size: 1.5em;
+  position: relative;
+  top: 10px; /* Move the heart slightly down */
 }
 
 .beautiful-text::after {
   content: " ♡"; /* Add a heart symbol after the text */
   color: #FFFFFF; /* White hearts */
   font-size: 1.5em;
+  position: relative;
+  top: 10px; /* Move the heart slightly down */
 }
 .night {
   position: fixed;
