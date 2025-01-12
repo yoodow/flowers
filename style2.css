@@ -12,13 +12,26 @@
 
 body {
   display: flex;
-  align-items: flex-end;
+  align-items: flex-end; /* Keep the flower effect at the bottom */
   justify-content: center;
   min-height: 100vh;
   background-color: var(--dark-color);
   overflow: hidden;
   perspective: 1000px;
-  padding: 50px 0px;
+  padding: 50px 0;
+  margin: 0;
+  position: relative; /* Set the position to relative to allow absolute positioning */
+}
+
+.beautiful-text {
+  font-size: 6em; /* Big font size */
+  font-family: 'Brush Script MT', cursive; /* Beautiful script-like font */
+  color: #FF69B4; /* Pink color */
+  text-align: center; /* Center-align the text */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Optional: adds a soft shadow to the text */
+  position: absolute; /* Absolute positioning */
+  top: 20px; /* Position the text 20px from the top of the page */
+  width: 100%; /* Ensure the text takes the full width */
 }
 
 .beautiful-text {
