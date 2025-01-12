@@ -53,6 +53,7 @@ body {
   position: relative;
   top: 10px; /* Move the heart slightly down */
 }
+
 .night {
   position: fixed;
   left: 50%;
